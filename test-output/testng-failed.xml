@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="StepDefinitions.ProjectTest"/>
+      <class name="Pages.Projectpage"/>
+      <class name="Pages.Loginpage"/>
+      <class name="StepDefinitions.LoginTest"/>
+      <class name="StepDefinitions.ApplicationHooks"/>
+      <class name="com.qa.factory.WebDriverUtil"/>
+      <class name="com.qa.util.JSONFileClass"/>
+      <class name="StepDefinitions.TestRunner"/>
+      <class name="com.qa.factory.DriverFactory"/>
+      <class name="com.qa.util.configReader"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->

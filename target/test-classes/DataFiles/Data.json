@@ -1,0 +1,55 @@
+{
+	"Login": [
+		{
+			"email": "ankit17sep1995@gmail.com",
+			"password": "Uimatic@12345"
+		}
+	],
+	"LoginMessage": [
+		{
+			"SuccessMessage": "Login success",
+			"InvalidMessage": "Invalid credentials."
+		}
+	],
+	"Project": [
+		{
+			"ProjectTitle": "AtomationProject"
+		}
+	],
+	"UpdateProject": [
+		{
+			"UpdateProjectTitle": "ProjectUpdated"
+		}
+	],
+	"ProjectHandle": [
+		{
+			"UpdateProjectHandle": "AutomationProjectUpdated"
+		}
+	],
+	"ProjectMessage": [
+		{
+			"CreateMessage": "Project created successfully.",
+			"UpdateMessage": "Project updated successfully.",
+			"DeleteMessage": "Project deleted successfully."
+		}
+	],
+	"Task": [
+		{
+			"TaskName": "Atomation Task",
+			"TaskDetail": "Automation task detail",
+			"UpdateTaskName": "Update Task Name",
+			"UpdateTaskDetail": "Update Task detail"
+		}
+	],
+	"TaskMessage": [
+		{
+			"TaskSuccessMessage": "Task created successfully.",
+			"TaskUpdateMessage": "Task updated successfully."
+		}
+	],
+	"TaskComment": [
+		{
+			"Comment": "Issue resolved"
+		}
+	]
+}
