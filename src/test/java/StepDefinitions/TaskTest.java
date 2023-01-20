@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import com.qa.factory.DriverFactory;
 import com.qa.util.JSONFileClass;
 
+import Pages.Labelpage;
 import Pages.Loginpage;
 import Pages.Projectpage;
 import Pages.Taskpage;
@@ -23,6 +24,7 @@ public class TaskTest {
 	Projectpage project;
 	JSONFileClass file;
 	JSONObject user;
+	Labelpage Label;
 
 	@Then("^clicks on add task button$")
 	public void clicks_on_add_task_button() {
@@ -71,6 +73,12 @@ public class TaskTest {
 
 	}
 
+	@Then("^Upload file for task$")
+	public void upload_file_for_task() throws Exception {
+		task = new Taskpage(DriverFactory.getDriver());
+		task.FileUpload();
+	}
+
 	@Then("^clicks on save button$")
 	public void clicks_on_save_button() throws Exception {
 		task = new Taskpage(DriverFactory.getDriver());
@@ -88,7 +96,9 @@ public class TaskTest {
 	@Then("^clicks on Backlog ticket$")
 	public void clicks_on_backlog_ticket() throws Exception {
 		task = new Taskpage(DriverFactory.getDriver());
+		Thread.sleep(2000);
 		task.ClickOnBcklogTicket();
+		Thread.sleep(2000);
 
 	}
 
@@ -131,6 +141,14 @@ public class TaskTest {
 		task.UpdateBucketOption();
 	}
 
+	@Then("^select Label option$")
+	public void select_label_option() throws Exception {
+		task = new Taskpage(DriverFactory.getDriver());
+		task.ClickOnLabelDropdown();
+		task.SelectLabelOption();
+
+	}
+
 	@Then("^enter task comment$")
 	public void enter_task_comment() throws Exception {
 		task = new Taskpage(DriverFactory.getDriver());
@@ -142,7 +160,6 @@ public class TaskTest {
 			JSONObject details = (JSONObject) TaskComment.get(i);
 
 			task.TaskComment((String) details.get("Comment"));
-			
 
 		}
 
@@ -153,6 +170,7 @@ public class TaskTest {
 		task = new Taskpage(DriverFactory.getDriver());
 		task.ClickOnPostCommentButton();
 		Thread.sleep(1000);
+		task.scrollviewcomment();
 
 	}
 
@@ -160,16 +178,29 @@ public class TaskTest {
 	public void clicks_on_save_button_for_update_task() throws Exception {
 		task = new Taskpage(DriverFactory.getDriver());
 		task.ClickOnSaveButtonForUpdate();
-		
 
 	}
-	
+
 	@Then("^validate update task message$")
 	public void validate_update_task_message() throws ParseException, Exception {
 		task = new Taskpage(DriverFactory.getDriver());
 		task.UpdateTaskMessageDisplay();
-		
-		
+
+	}
+
+	@Then("^clicks on Delete task Button$")
+	public void clicks_on_delete_task_button() {
+		task = new Taskpage(DriverFactory.getDriver());
+		task.ClickOnBcklogTicket();
+		task.ClickOnDeleteButton();
+
+	}
+
+	@Then("validate Delete task message")
+	public void validate_delete_task_message() throws ParseException, Exception {
+		task = new Taskpage(DriverFactory.getDriver());
+		task.DeleteTaskMessageDisplay();
+
 	}
 
 }

@@ -13,7 +13,7 @@
 	],
 	"Project": [
 		{
-			"ProjectTitle": "AtomationProject"
+			"ProjectTitle": "AutomationProject"
 		}
 	],
 	"UpdateProject": [
@@ -44,12 +44,23 @@
 	"TaskMessage": [
 		{
 			"TaskSuccessMessage": "Task created successfully.",
-			"TaskUpdateMessage": "Task updated successfully."
+			"TaskUpdateMessage": "Task updated successfully.",
+			"TaskDeleteMessage": "Task deleted successfully."
 		}
 	],
 	"TaskComment": [
 		{
 			"Comment": "Issue resolved"
+		}
+	],
+	"LabelName": [
+		{
+			"Name": "Automation label"
+		}
+	],
+	"LabelMessage": [
+		{
+			"LabelCreateMessage": "Label created successfully."
 		}
 	]
 }
