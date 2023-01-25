@@ -1,0 +1,21 @@
+# Created at 2023-01-23T10:00:00.272
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '.io/docs/cucumber-jvm                 │'.
+
+# Created at 2023-01-23T10:00:00.273
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│                                                                                   │'.
+
+# Created at 2023-01-23T10:00:00.274
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│ Disable this message with one of the following:                                   │'.
+
+# Created at 2023-01-23T10:00:00.276
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│                                                                                   │'.
+
+# Created at 2023-01-23T10:00:00.277
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │'.
+
+# Created at 2023-01-23T10:00:00.279
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │'.
+
+# Created at 2023-01-23T10:00:00.281
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '└───────────────────────────────────────────────────────────────────────────────────┘'.
+

@@ -98,6 +98,7 @@ public class TaskTest {
 		task = new Taskpage(DriverFactory.getDriver());
 		Thread.sleep(2000);
 		task.ClickOnBcklogTicket();
+		// task.dragAndDrop();
 		Thread.sleep(2000);
 
 	}
@@ -189,7 +190,7 @@ public class TaskTest {
 	}
 
 	@Then("^clicks on Delete task Button$")
-	public void clicks_on_delete_task_button() {
+	public void clicks_on_delete_task_button() throws InterruptedException {
 		task = new Taskpage(DriverFactory.getDriver());
 		task.ClickOnBcklogTicket();
 		task.ClickOnDeleteButton();

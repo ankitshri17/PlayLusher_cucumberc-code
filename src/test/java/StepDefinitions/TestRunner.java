@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Parallel/Task.feature", glue = {
+@CucumberOptions(features = "src/test/resources/Parallel/credentials.feature", glue = {
 		"StepDefinitions" }, monochrome = true, dryRun = false, plugin = { "pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }
 

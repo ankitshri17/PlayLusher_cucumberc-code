@@ -40,8 +40,10 @@ public class Projectpage {
 	@FindBy(xpath = "//div[@aria-label='Project created successfully.']")
 	WebElement project_create_msg;
 
-	@FindBy(xpath = "//div[@class='col-md-7 col-sm-12 col-2 d-flex d-sm-block justify-content-end']//i[@class='fa fa-pencil-square-o fa-2x']")
+	@FindBy(xpath = "//a[@title='Edit']")
 	WebElement Click_Edit_Btn;
+	
+	//div[@class='col-md-7 col-sm-12 col-2 d-flex d-sm-block justify-content-end']//i[@class='fa fa-pencil-square-o fa-2x']
 
 	@FindBy(name = "project_name")
 	WebElement Update_Project_Title;
@@ -79,7 +81,7 @@ public class Projectpage {
 	@FindBy(xpath = "//div[@aria-label='Project deleted successfully.']")
 	WebElement project_Deleted_message;
 
-	SoftAssert softassert = new SoftAssert();
+	//SoftAssert softassert = new SoftAssert();
 
 	public Projectpage(WebDriver driver) {
 		this.driver = driver;

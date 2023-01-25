@@ -62,5 +62,39 @@
 		{
 			"LabelCreateMessage": "Label created successfully."
 		}
+	],
+	"ReportDescription": [
+		{
+			"Description": "Automation Report",
+			"UpdatedDescription": "Automation Updated Report",
+			"Hours": "8",
+			"UpdateHours": "7.5"
+		}
+	],
+	"ReportMessage": [
+		{
+			"ReportSuccessMessage": "Report created successfully.",
+			"ReportUpdateMessage": "Report updated successfully."
+		}
+	],
+	"Credentials": [
+		{
+			"CredentialsDescription": "Automation Credentials",
+			"UpdatedCredentialsDescription": "Updated Automation Credentials",
+			"CredentialsComment": "Credential is not matching",
+			"UpdatedCredentialsComment": "Credential is matching",
+			"CreateCredentialMessage": "Credential created successfully.",
+			"CommentCreateMessage": "Comment created successfully."
+		}
+	],
+	"Wiki": [
+		{
+			"WikiDescription": "Automation Wiki",
+			"UpdatedWikiDescription": "Updated Automation Wiki",
+			"WikiComment": "Wiki is not matching",
+			"UpdatedWikiComment": "Wiki is matching",
+			"CreateCredentialMessage": "Credential created successfully.",
+			"CommentCreateMessage": "Comment created successfully."
+		}
 	]
 }

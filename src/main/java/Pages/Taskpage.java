@@ -1,10 +1,6 @@
 package Pages;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 import org.json.simple.JSONArray;
@@ -13,6 +9,8 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -94,6 +92,16 @@ public class Taskpage {
 	@FindBy(xpath = "//div[@aria-label='Task deleted successfully.']")
 	WebElement Delete_task_message;
 
+	@FindBy(xpath = "//div[contains(text(),' In Progress (0) ')]//following-sibling::div[@class='kanban-row-container']")
+	WebElement target_ticket;
+
+	// div[contains(text(),' In Progress (0)
+	// ')]//following-sibling::div[@class='kanban-row-container']
+
+	// @FindBy(xpath = "//div[@class='kanban_box_main content_Section kanban-view
+	// ng-star-inserted']//div[3]")
+	// WebElement target_ticket;
+
 	public Taskpage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -174,9 +182,13 @@ public class Taskpage {
 
 	}
 
-	public void ClickOnBcklogTicket() {
-
+	public void ClickOnBcklogTicket() throws InterruptedException {
+		Actions action = new Actions(DriverFactory.getDriver());
+		// action.build().perform();
+		action.moveToElement(Backlog_ticket).build().perform();
+		Thread.sleep(2000);
 		Backlog_ticket.click();
+
 	}
 
 	public void UpdateTaskName(String UpdateTaskName) throws Exception {
@@ -322,7 +334,7 @@ public class Taskpage {
 
 		// Use the absolute path with Selenium.
 		// upload_file_button.sendKeys(absolutePath);
-//		Thread.sleep(5000);
+		// Thread.sleep(5000);
 		// upload_file_button.click();
 		util = new WebDriverUtil();
 		util.waitForElementToBeClickable(upload_file_button);
@@ -361,5 +373,15 @@ public class Taskpage {
 		System.out.println("file is uploaded successfully");
 		//
 	}
+
+	// public void dragAndDrop() throws InterruptedException {
+	// Thread.sleep(5000);
+	// util = new WebDriverUtil();
+	// Actions action = new Actions(DriverFactory.getDriver());
+	// Action dragAndDrop =
+	// action.clickAndHold(Backlog_ticket).moveToElement(target_ticket).release(target_ticket)
+	// .click().build();
+	// dragAndDrop.perform();
+	// }
 
 }

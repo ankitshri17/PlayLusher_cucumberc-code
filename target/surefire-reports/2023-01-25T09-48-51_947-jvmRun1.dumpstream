@@ -1,0 +1,24 @@
+# Created at 2023-01-25T09:49:45.095
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '/PlayLusher/src/test/resources/Parallel/Login.feature:10)'.
+
+# Created at 2023-01-25T09:51:46.003
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '.io/docs/cucumber-jvm                 │'.
+
+# Created at 2023-01-25T09:51:46.004
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│                                                                                   │'.
+
+# Created at 2023-01-25T09:51:46.005
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│ Disable this message with one of the following:                                   │'.
+
+# Created at 2023-01-25T09:51:46.006
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│                                                                                   │'.
+
+# Created at 2023-01-25T09:51:46.006
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │'.
+
+# Created at 2023-01-25T09:51:46.007
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │'.
+
+# Created at 2023-01-25T09:51:46.018
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '└───────────────────────────────────────────────────────────────────────────────────┘'.
+
